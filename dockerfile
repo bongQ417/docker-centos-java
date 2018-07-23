@@ -7,4 +7,4 @@ RUN yum -y install "java-1.$JAVA_VERSION.0-openjdk" && \
     rm -rf /var/cache/yum && \
     echo "Asia/shanghai" > /etc/timezone
 
-CMD /bin/bash
+CMD ["/bin/bash"]
