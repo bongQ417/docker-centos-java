@@ -7,6 +7,7 @@ ARG JAVA_VERSION=8
 
 RUN yum -y install "java-1.$JAVA_VERSION.0-openjdk" && \
     yum -y install kde-l10n-Chinese && \
+    yum -y install less vim nano && \
     yum -y reinstall glibc-common && \
     yum clean all && \
     rm -rf /var/cache/yum && \
