@@ -1,5 +1,7 @@
 FROM centos:latest
 
+ENV LANG zh_CN.UTF-8
+
 ARG JAVA_VERSION=8
 
 RUN yum -y install "java-1.$JAVA_VERSION.0-openjdk" && \
